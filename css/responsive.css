@@ -1,0 +1,846 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+
+/* @import url('css/font-awesome.min.css');*/
+
+
+/* In html file */
+
+
+/*<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta name="viewport" content="width=device-width">*/
+
+
+/**
+ * 8.0 Media Queries
+ * ----------------------------------------------------------------------------
+ */
+
+
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+
+@-ms-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+}
+
+@media (max-width: 1599px) {
+	#recharge-tab .tab-content .dropdown .dropdown-menu {
+		left: auto !important;
+		right: -50%;
+	}
+	#fastag-top .fastag-permnt-box .fastag-permnt {
+		padding-top: 40px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.login-bttn {
+		padding: 7px 10px;
+		font-size: 15px;
+	}
+	#recharge-tab {
+		padding: 0px 15px;
+	}
+	.logo:before {
+		width: 165px;
+		height: 90px;
+	}
+	.logo:after {
+		content: '';
+		width: 165px;
+		height: 90px;
+	}
+	.logo img {
+		max-width: 190px;
+	}
+	#recharge-tab .r-corner-tab .nav-link {
+		width: 162px;
+		font-size: 12px;
+	}
+	#recharge-tab .tab-content .tab-content form .bck-border {
+		width: 260px;
+	}
+	#recharge-tab .g-box {
+		right: -2%;
+	}
+	#recharge-tab .tab-content li a p.r-heading {
+		font-size: 12px;
+	}
+	/*#recharge-tab .tab-content .dropdown .dropdown-menu {
+		left: -198% !important;
+	}*/
+	#recharge-tab .r-tab-content-inner-content .nav {
+		padding: 0px 265px;
+	}
+	#recharge-tab .r-tab-content-inner-content a.top-brdr2:after {
+		right: 42.5%;
+	}
+	#recharge-tab .r-tab-content-inner-content a.top-brdr1:after {
+		right: 55%
+	}
+	#recharge-tab .r-tab-content-inner-content #r-electricity .nav {
+		padding: 0px 200px;
+	}
+	#recharge-tab .r-tab-content-inner-content #r-electricity a.top-brdr1:after {
+		right: 55.5%;
+	}
+	.wallet-header .w-heading h2 {
+		font-size: 25px;
+	}
+	.wallet-header .w-heading h3.fast {
+		width: 28.2%;
+	}
+	.wallet-header .w-heading h3 {
+		width: 55%;
+	}
+	.wallet-header .w-heading h3.fast:after {
+		top: 37.3%;
+		right: 54%;
+	}
+	.wallet-header .w-heading:before {
+		height: 150px;
+		top: 19.3%;
+	}
+	.wallet-header .w-heading h3.reliable:after {
+		top: 50.7%;
+		right: 33.8%;
+	}
+	.wallet-header .w-heading h3.hassle:after {
+		top: 24%;
+		right: 33.8%;
+	}
+	.wallet-header .w-heading h2.money:before {
+		top: 62%;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .w-balance h2 {
+		font-size: 22px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .w-balance h4 {
+		font-size: 19px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .w-balance h2:before {
+		right: -13%;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .add-money h3 .plus-icon {
+		font-size: 21px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .add-money h3 {
+		font-size: 15px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-balance:after {
+		top: 129%;
+		right: 6.7%;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-balance:before {
+		top: 132%;
+		right: 8.5%
+	}
+	#recharge-tab .wm-detail .w-front p {
+		font-size: 10px;
+	}
+	#recharge-tab .wm-detail .w-head {
+		width: 35%;
+	}
+	#recharge-tab .wm-detail .w-head:before {
+		left: 9%;
+	}
+	#recharge-tab .wm-detail .w-head.w-support:before {
+		top: 32.9%;
+		left: 9%;
+	}
+	#recharge-tab .wm-detail .w-head.w-assistance:before {
+		top: 60.9%;
+		left: 9%;
+	}
+	#recharge-tab .wm-detail .wallet-to-wallet-page .wallet-to-wallet-head,
+	#recharge-tab .wm-detail .wallet-to-bank-page .wallet-to-bank-head,
+	#recharge-tab .wm-detail .add-money .add-money-head {
+		font-size: 22px;
+	}
+	#recharge-tab .wm-detail label {
+		font-size: 12px;
+	}
+	#recharge-tab .wm-detail p,
+	#recharge-tab .wm-detail span {
+		font-size: 17px;
+	}
+	#recharge-tab .loan-top .loan-form .go-bttn {
+		width: 18%
+	}
+	#recharge-tab .s-fast-sub-head {
+		font-size: 14px;
+	}
+	#recharge-tab .s-fast-process .loan-proc h6 {
+		font-size: 11px;
+	}
+	#recharge-tab .loan-top .loan-eligibility-otp .loan-form .go-bttn {
+		width: 22%;
+	}
+	#recharge-tab .loan-top .loan-thank-page .loan-thank-page-bg .thnk-wlcm {
+		background-size: 75%;
+		background-position: 50px 35px;
+	}
+	#recharge-tab .s-fast-loan .s-fast-nme label {
+		font-size: 8px !important;
+	}
+	footer .f-social .f-socialicon li a {
+		font-size: 16px;
+	}
+	.f-border:after {
+		height: 300px;
+	}
+	#fastag-top .fastag-permnt-box .fastag-permnt {
+		padding-top: 10px;
+	}
+	#fastag-faq .fastag-faq-acc .card button {
+		font-size: 13px;
+	}
+	#fastag-faq .fastag-faq-acc .card-header h2 span {
+		font-size: 13px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .w-balance h4 {
+		font-size: 17px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .w-balance h2 {
+		font-size: 20px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .wa-btn h3 {
+		font-size: 16px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .add-money h3 {
+		font-size: 15px;
+		padding: 3px 0;
+	}
+	#recharge-tab .wm-balance .w-bttns:after {
+		width: 96px;
+		height: 40px;
+		top: 139px;
+		right: 0%;
+		border-radius: 20px 0px 0px 20px;
+	}
+	#recharge-tab .wm-balance .w-bttns:before {
+		width: 89px;
+		height: 28px;
+		top: 145px;
+		right: 0%;
+		border-radius: 20px 0px 0px 20px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-balance:before {
+		top: 135px;
+		right: 25px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-balance:after {
+		top: 131px;
+		right: 21px;
+	}
+}
+
+@media (max-width: 1024px) {
+	footer .f-menu h5 {
+		font-size: 19px;
+	}
+	footer .f-social .f-socialicon li a {
+		padding: 8px 10px;
+	}
+	#recharge-tab .r-corner-tab .nav-link {
+		width: 155px;
+	}
+	.h-menu .h-menu-list li a {
+		font-size: 17px;
+	}
+	#offer .clip-blue {
+		right: 17%;
+	}
+	#recharge-tab .tab-content .tab-content form .bck-border {
+		width: 250px;
+	}
+	.login-bttn {
+		padding: 7px;
+	}
+	#recharge-tab .r-tab-content-inner-content a.top-brdr2:after {
+		right: 40.5%;
+	}
+	#recharge-tab .r-tab-content-inner-content a.top-brdr1:after {
+		right: 53.2%;
+	}
+	#recharge-tab .r-tab-content-inner-content #r-electricity a.top-brdr1:after {
+		right: 54.4%;
+	}
+	#recharge-tab .r-tab-content-inner-content #r-electricity a.top-brdr2:after {
+		right: 37.4%;
+	}
+	#recharge-tab .s-fast-process .loan-proc p {
+		font-size: 10px;
+	}
+	#recharge-tab .s-fast-process .loan-proc h6 {
+		font-size: 9px;
+	}
+	#recharge-tab .s-fast-info .loan-info .s-fast-documents .s-fast-doc-list {
+		font-size: 9px;
+	}
+	#fastag-faq .fastag-head h4 {
+		font-size: 16px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .w-balance h4 {
+		font-size: 18px;
+	}
+	.wallet-header .w-heading h3.hassle:after {
+		top: 25%;
+	}
+	.wallet-header .w-heading h3.fast:after {
+		top: 38.6%;
+		right: 53.5%;
+	}
+	.wallet-header .w-heading h3.reliable:after {
+		top: 52.5%;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .wa-btn h3 {
+		font-size: 23px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .w-balance h2 {
+		font-size: 20px;
+	}
+	#recharge-tab .wm-detail .w-head.w-support:before {
+		top: 36.8%;
+	}
+	#recharge-tab .wm-detail .w-head.w-assistance:before {
+		top: 68%;
+	}
+}
+
+@media(max-width: 1200px) and (min-width:992px) {
+	.h-menu .h-menu-list li a {
+		padding: 5px 4px;
+	}
+	.login-bttn {
+		padding: 7px 5px;
+		font-size: 15px;
+	}
+	.logo img {
+		max-width: 190px;
+	}
+	header {
+		margin: 10px 0px 70px;
+	}
+	.logo:before {
+		bottom: -134px;
+	}
+	.logo:after {
+		top: 94px;
+	}
+	.logo img {
+		max-width: 190px;
+		top: 0;
+		right: -6px;
+	}
+	#recharge-tab .tab-content .tab-content form .bck-border {
+		width: auto;
+	}
+	.get-offer {
+		width: 75%;
+	}
+	.blank-section {
+		height: 300px;
+	}
+	footer .f-social .f-socialicon li {
+		padding: 5px 0;
+	}
+	footer .f-social .f-socialicon li a {
+		padding: 0;
+		width: 26px;
+		height: 26px;
+		font-size: 13px;
+		line-height: 25px;
+		display: inline-block;
+	}
+	footer .f-menu h5 {
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 992px) {
+	/*
+	.h-menu .h-menu-list li a {
+		font-size: 14px;
+		padding: 5px 0px;
+	}
+	.login-bttn {
+		padding: 7px 0px;
+		font-size: 12px;
+	}
+	.logo img {
+		max-width: 205px;
+		right: -36%;
+	}
+	.logo:before {
+		width: 135px;
+		height: 60px;
+		bottom: -391%;
+	}
+	.logo:after {
+		width: 135px;
+		height: 60px;
+		top: 340%;
+	}
+	#recharge-tab .r-corner-tab .nav-link {
+		width: 119px;
+		font-size: 9px;
+	}
+	#recharge-tab .tab-content .tab-content form .bck-border {
+		width: 185px;
+	}
+	#recharge-tab .g-box {
+		right: -20%;
+	}
+	#recharge-tab .col-6 .g-box{
+		right: 16%;
+	}
+	#recharge-tab .view-bttn {
+		width: 120px;
+	}
+	#recharge-tab .tab-content .tab-content button.pr-bttn{
+		font-size:12px;
+	}
+	#recharge-tab .tab-content li a .img-border {
+		padding: 7px;
+	}
+	#recharge-tab .tab-content li a p.r-heading {
+		font-size: 9px;
+	}*/
+}
+
+
+/* Collapse oversized image and pulled images after iPad breakpoint. */
+
+@media (max-width: 992px) {
+	/*header css start*/
+	.h-menu .h-menu-list li a {
+		font-size: 15px;
+		padding: 5px 0px;
+	}
+	.h-menu .h-menu-list li:after {
+		margin: -5px 5px;
+	}
+	.login-bttn {
+		padding: 7px 3px;
+		font-size: 13px;
+	}
+	.login {
+		padding-left: 0 !important;
+	}
+	header {
+		margin: 10px 0px 35px;
+	}
+	.logo:before {
+		width: 173px;
+		height: 77px;
+		left: -19px;
+		bottom: auto;
+		top: 48px;
+	}
+	.logo:after {
+		content: '';
+		width: 173px;
+		height: 77px;
+		top: 58px;
+		left: -19px;
+	}
+	.logo img {
+		max-width: 150px;
+		right: auto;
+		top: -20px;
+		left: -7px;
+	}
+	.login i {
+		font-size: 32px;
+		color: #fff;
+		display: inline-block;
+		vertical-align: middle;
+		padding: 4px 10px;
+		background-image: linear-gradient(180deg, rgba(0, 0, 175, 1) 0%, rgba(0, 209, 255, 0.7959558823529411) 100%);
+	}
+	.p_0 {
+		padding-right: 12px;
+	}
+	#recharge-tab .r-corner-tab-content.tab-content {
+		margin-left: 0;
+	}
+	.h-menu .h-menu-list {
+		padding: 8px 10px;
+	}
+	/*header css End*/
+	#recharge-tab .tab-content .r-tab-content-inner-tab>li {
+		max-width: 20%;
+		display: inline-block;
+		width: 20%;
+	}
+	#recharge-tab .tab-content li a .img-border {
+		width: 50px;
+	}
+	#recharge-tab ul.dropdown-menu li a .img-border {
+		width: 50px;
+	}
+	#recharge-tab .r-corner-tab .nav-link {
+		width: auto;
+	}
+	#recharge-tab .tab-content .tab-content form.entamt {
+		margin-left: 0px;
+		width: calc(100% - 0px);
+	}
+	#recharge-tab .tab-content .tab-content form .bck-border {
+		width: auto;
+	}
+	#recharge-tab .tab-content .tab-content button.pr-bttn {
+		font-size: 15px;
+	}
+	.blank-section {
+		height: 150px;
+	}
+	footer .f-menu h5 {
+		font-size: 14px;
+	}
+	.circle-border i {
+		font-size: 5px;
+	}
+	footer ul li {
+		font-size: 13px;
+		position: relative;
+		padding-left: 10px;
+	}
+	footer .f-menu li:before {
+		font-size: 5px;
+		padding: 0px 2px;
+		position: absolute;
+		left: 0;
+		top: 8px;
+	}
+	footer .f-social .f-socialicon li a {
+		padding: 0;
+		width: 24px;
+		height: 24px;
+		font-size: 13px;
+		line-height: 23px;
+		display: inline-block;
+	}
+	footer .terms .terms-menu li a {
+		font-size: 13px;
+	}
+	nav.text-center.h-menu.navbar.navbar-expand-lg {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 50px;
+	}
+	.h-menu-list .d-inline-block {
+		width: 100%;
+		padding: 14px;
+	}
+	.h-menu .h-menu-list {
+		height: 100vh;
+		background-image: linear-gradient(180deg, rgba(0, 0, 175, 1) 0%, rgba(0, 209, 255, 0.7959558823529411) 100%);
+	}
+	.h-menu .h-menu-list li a {
+		font-size: 17px;
+		mix-blend-mode: initial;
+		color: #fff !important;
+	}
+	.h-menu .h-menu-list li:after {
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(180deg, rgba(0, 0, 175, 1) 0%, rgba(0, 209, 255, 0.7959558823529411) 100%);
+	}
+	.collapse.navbar-collapse.text-center {
+		display: none;
+		z-index: -1;
+	}
+	.navbar-collapse.text-center.collapse.show {
+		display: block;
+		z-index: 1;
+	}
+	header button.navbar-toggler {
+		padding-right: 0;
+	}
+	header button.navbar-toggler {
+		display: inline-block;
+	}
+	.wallet-header .w-heading h2 {
+		font-size: 20px;
+	}
+	.wallet-header .row {
+		height: auto;
+	}
+	.wallet-header .w-side-icon img {
+		width: auto;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-balance:before {
+		right: 5px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-balance:after {
+		right: 1px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .wa-btn .w-t-w {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.logo img {
+		max-width: 80px;
+		top: 10px;
+		left: 20px;
+	}
+	.logo:before {
+		width: 100px;
+		height: 45px;
+		left: 10px;
+	}
+	.logo:after {
+		width: 100px;
+		height: 45px;
+		left: 10px;
+		top: 55px;
+	}
+	header {
+		margin: 0px 0px 35px;
+	}
+	.container {
+		max-width: 100%;
+	}
+	.login i {
+		font-size: 32px;
+		padding: 4px 10px;
+		background-image: linear-gradient(180deg, rgba(0, 0, 175, 1) 0%, rgba(0, 209, 255, 0.7959558823529411) 100%);
+	}
+	.login {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.login-bttn:after {
+		display: none;
+	}
+	nav.text-center.h-menu.navbar.navbar-expand-lg {
+		top: 71px;
+	}
+	#recharge-tab .nav {
+		display: inline-block;
+		padding: 15px 0px 12px;
+	}
+	#recharge-tab .r-corner-tab .nav-link {
+		width: auto;
+		display: inline-block !important;
+		padding: 8px 10px;
+	}
+	.p_0 {
+		padding-right: 0;
+	}
+	#recharge-tab .r-corner-tab-content.tab-content {
+		margin-top: 20px;
+	}
+	#recharge-tab .tab-content .r-tab-content-inner-tab>li {
+		max-width: 20%;
+		display: inline-block;
+		width: 19.5%;
+	}
+	#recharge-tab .r-tab-content-inner .r-tab-content-inner-tab nav {
+		text-align: center;
+	}
+	#recharge-tab .tab-content .nav.r-tab-content-inner-tab {
+		text-align: center;
+		margin: 0 auto;
+	}
+	#recharge-tab .tab-content .tab-content form .bck-border {
+		width: 100%;
+		margin: 5px 0 10px;
+		text-align: left;
+	}
+	#recharge-tab .g-box {
+		width: 100%;
+	}
+	#recharge-tab .tab-content .tab-content form input[type=text] {
+		text-align: center;
+	}
+	#recharge-tab .view-bttn {
+		width: 100%;
+		padding: 8px 12px;
+	}
+	#recharge-tab .tab-content .tab-content form.entamt {
+		background: #fff;
+		padding: 20px 15px;
+	}
+	#recharge-tab .tab-content .tab-content form.entamt label.d-inline-block {
+		width: 100%;
+		padding: 0 0 5px;
+	}
+	footer .fv-by img {
+		max-width: 70px;
+		max-height: 70px;
+	}
+	footer .fv-by img.f-master {
+		top: -18px;
+	}
+	footer .f-menu h5 {
+		font-size: 17px;
+	}
+	.circle-border.text-center {
+		margin-top: 20px;
+	}
+	.f-company.f-border:after {
+		display: none;
+	}
+	.f-verify.f-border:after {
+		display: none;
+	}
+	#offer .owl-nav .owl-next {
+		top: 10%;
+	}
+	#offer .owl-nav .owl-prev {
+		top: 10%;
+	}
+	.m_p_0 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.m_p_0 .col-3 {
+		padding: 0;
+	}
+	.m_p_0 .col-1 {
+		padding: 0;
+	}
+	.m_p_0 .col-7 {
+		padding: 0;
+	}
+}
+
+@media (max-width: 576px) {
+	footer ul li {
+		font-size: 14px;
+	}
+	footer .f-menu h5 {
+		text-align: left !important;
+	}
+	footer .f-menu .f-line {
+		margin: 0;
+	}
+	.circle-border.text-center {
+		text-align: left !important;
+	}
+	footer .pt-5,
+	footer .py-5 {
+		padding-top: 0.5rem!important;
+	}
+	footer .fv-by img.f-master {
+		position: initial;
+	}
+	footer .terms {
+		width: 100%;
+		margin: auto;
+	}
+	footer .terms .terms-menu li {
+		padding: 3px 3px;
+	}
+	.d-mob-post {
+		padding-right: 0;
+	}
+	#recharge-tab .tab-content .r-tab-content-inner-tab>li {
+		max-width: 23.5%;
+		width: 23.5%;
+	}
+	.wallet-header .w-heading h3 {
+		width: 85% !important
+	}
+	.wallet-header .w-heading h3:after {
+		right: 13.8% !important;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .w-balance h4 {
+		font-size: 15px;
+		line-height: 43px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .w-balance {
+		width: 100%;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .w-balance h2 {
+		font-size: 15px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .w-balance h2:before {
+		top: 29%;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .w-balance h2:after {
+		height: 43px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-bttns-border .add-money {
+		width: 49%;
+	}
+	#recharge-tab .wm-balance .w-bttns:after {
+		top: 107px;
+	}
+	#recharge-tab .wm-balance .w-bttns:before {
+		top: 113px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-balance:after {
+		right: 15px;
+		top: 101px;
+	}
+	#recharge-tab .wm-balance .w-bttns .w-balance:before {
+		right: 19px;
+		top: 105px;
+	}
+	#recharge-tab .wm-detail .wallet-to-wallet-page .wallet-to-wallet-trnsfert,
+	#recharge-tab .wm-detail .wallet-to-wallet-page .wallet-to-wallet-trnsferotp,
+	#recharge-tab .wm-detail .wallet-to-wallet-page .wallet-to-wallet-trnsfersccfl,
+	#recharge-tab .wm-detail .wallet-to-bank-page .wallet-to-bank-trnsfert,
+	#recharge-tab .wm-detail .wallet-to-bank-page .wallet-to-bank-trnsferotp,
+	#recharge-tab .wm-detail .wallet-to-bank-page .wallet-to-bank-trnsferconf,
+	#recharge-tab .wm-detail .wallet-to-bank-page .wallet-to-bank-trnsfersccfl,
+	#recharge-tab .wm-detail .add-money .add-money-mode .row {
+		padding: 30px 20px;
+	}
+}
+
+
+/* Mobile devices */
+
+@media (max-width: 359px) {
+	#recharge-tab .tab-content .r-tab-content-inner-tab>li {
+		max-width: 31.5%;
+		width: 31.5%;
+	}
+	#recharge-tab ul.dropdown-menu {
+		min-width: 220px;
+	}
+	#recharge-tab ul.dropdown-menu li {
+		max-width: 48%;
+	}
+}
+
+
+/**
+ * 9.0 Print
+ * ----------------------------------------------------------------------------
+ */
+
+
+/* Retina-specific styles. */
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {}
+
+@media print {}
